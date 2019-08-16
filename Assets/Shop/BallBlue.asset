@@ -15,3 +15,5 @@ MonoBehaviour:
   itemName: BlueBall
   sprite: {fileID: 21300000, guid: 6526714b18b3ea549bf9463d5f2960f6, type: 3}
   price: 100
+  isBought: 1
+  isUsing: 0

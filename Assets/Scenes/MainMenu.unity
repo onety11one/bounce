@@ -2457,8 +2457,6 @@ MonoBehaviour:
   shopContainer: {fileID: 195035943}
   shopItemPrefab: {fileID: 1735651869309728475, guid: 79076edd641e18b418df0d867c6bfa59,
     type: 3}
-  confirmPanel: {fileID: 87813085}
-  confirmText: {fileID: 718100490}
 --- !u!1 &1355617162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,18 +2758,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1455352513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1295888498}
-        m_MethodName: BuyConfirm
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1455352513
@@ -3494,8 +3481,6 @@ MonoBehaviour:
   shopContainer: {fileID: 878502835}
   shopItemPrefab: {fileID: 1735651869309728475, guid: 2a6ecef175ffb12448db6e7ec4b0e506,
     type: 3}
-  confirmPanel: {fileID: 87813085}
-  confirmText: {fileID: 718100490}
 --- !u!114 &2039886407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3683,8 +3668,6 @@ MonoBehaviour:
   shopContainer: {fileID: 60277177}
   shopItemPrefab: {fileID: 1735651869309728475, guid: 8bd20710063752f43800f6221b0792b8,
     type: 3}
-  confirmPanel: {fileID: 87813085}
-  confirmText: {fileID: 718100490}
 --- !u!114 &2093521782
 MonoBehaviour:
   m_ObjectHideFlags: 0

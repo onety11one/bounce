@@ -15,3 +15,5 @@ MonoBehaviour:
   itemName: Green Ball
   sprite: {fileID: 21300000, guid: 27573d6a7bafae34e9d525336a982768, type: 3}
   price: 100
+  isBought: 1
+  isUsing: 0

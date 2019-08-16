@@ -15,3 +15,5 @@ MonoBehaviour:
   itemName: Basket Ball
   sprite: {fileID: 21300000, guid: 45549883238dd3748a56cba48e7da25f, type: 3}
   price: 300
+  isBought: 1
+  isUsing: 0

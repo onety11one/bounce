@@ -10,10 +10,7 @@ public class Shop : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Transform shopContainer;
-    [SerializeField] private GameObject shopItemPrefab;
-
-    public GameObject confirmPanel;
-    public Text confirmText;
+    [SerializeField] private GameObject shopItemPrefab;  
 
     void Start()
     {
@@ -35,14 +32,10 @@ public class Shop : MonoBehaviour
     }
 
     void OnBuyButtonClick(ShopItem item)
-    {
-        Debug.Log("Do you wish to buy " + item.name + " for " + item.price +"?");
-        confirmPanel.SetActive(true);
-        confirmText.text = "Do you wish to buy " + item.name + " for " + item.price + "?";
-    }
-
-    public void BuyConfirm(ShopItem item) //?????
-    {
-        Debug.Log("bought for" + item.price);
-    }
+    {        
+            Debug.Log("You bought " + item.name + " for " + item.price);
+            item.isBought = true;
+            GameController.totalScore -= item.price;
+            Debug.Log("Total Score: " + GameController.totalScore);         
+    }    
 }

@@ -8,5 +8,6 @@ public class ShopItem : ScriptableObject
     public string itemName;
     public Sprite sprite;
     public int price;
-
+    public bool isBought;
+    public bool isUsing;  
 }

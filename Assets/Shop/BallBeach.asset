@@ -15,3 +15,5 @@ MonoBehaviour:
   itemName: Beach Ball
   sprite: {fileID: 21300000, guid: 2479225194327ee479cc956a3998f02a, type: 3}
   price: 700
+  isBought: 1
+  isUsing: 0
