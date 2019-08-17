@@ -15,3 +15,6 @@ MonoBehaviour:
   itemName: Paper
   sprite: {fileID: 21300000, guid: e79312b67589dce43adbc2fca432a6b6, type: 3}
   price: 1000
+  material: {fileID: 0}
+  isBought: 0
+  isUsing: 0

@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - MoveForward
     - PlatformColorRandomizer
     - PlatformSpawner
+    - PlayerInventory
     - PlayerMovement
     - PlayerRotation
     - PlayerSpawningObjects
@@ -18,17 +19,13 @@ ScriptsOnlyBuild:
     - SelfDestruct
     - Shop
     - ShopItem
+    - ShopItemButtons
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -105,27 +102,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10474}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 10836}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11016}
+      Script: {instanceID: 10838}
     - Class: 114
-      Script: {instanceID: 11232}
+      Script: {instanceID: 11018}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11234}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11524}
     - Class: 114
-      Script: {instanceID: 11584}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11586}
     - Class: 114
       Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11784}
+      Script: {instanceID: 11718}
+    - Class: 114
+      Script: {instanceID: 11754}
+    - Class: 114
+      Script: {instanceID: 11788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -206,21 +207,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10610}
     - Class: 114
-      Script: {instanceID: 10754}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10756}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11182}
     - Class: 114
-      Script: {instanceID: 11682}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11784}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 67590}
+      Script: {instanceID: 11788}
+    - Class: 114
+      Script: {instanceID: 39724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -542,10 +545,16 @@ ScriptsOnlyBuild:
     className: ChangeColor
   - hash:
       serializedVersion: 2
-      Hash: 9e9f4e0e054e7292f8eef332d56c3c4d
+      Hash: 98dcf55da944e5a0d583ceb2b18fe288
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shop
+  - hash:
+      serializedVersion: 2
+      Hash: 900c412a2e4b7c88ffc61db26cc6a54a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShopItem
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -590,7 +599,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 3b402cb52b6e38be4a4a12be008c9f06
+      Hash: 8300063c42fa39e80497ab4ce141ac5f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -728,7 +737,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: ceeb3503a01cf6c27795618d1156dd59
+      Hash: b5b49a753b47854670fddfbb19aefb30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BonusBehaviour
@@ -770,7 +779,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: a458c5322b135ae14bc68abded350b5a
+      Hash: b79a59379ffbf6cbd99184d613a99cd0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuController
@@ -816,6 +825,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 69752888bd7c493fc539254abbe8ebd9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerInventory
   - hash:
       serializedVersion: 2
       Hash: 7090bc1e5ccaec2a9d0d1335ed8cee99
@@ -866,12 +881,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 3efb9b56c6fe6329315fafb4b199031b
+      Hash: 57919e41d877160b1954291a12eeea0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShopItem
+    className: ShopItemButtons
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/pasha/Desktop/Runner_v0008.apk
+  playerPath: C:/Users/pasha/Desktop/Runner_v00010.apk

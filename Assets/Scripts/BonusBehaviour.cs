@@ -6,13 +6,14 @@ public class BonusBehaviour : MonoBehaviour
 {
     public float rotSpeed = 5f;
     public float vertSpeed = 2f;
+    public bool isLife;
     Vector3 newPosition;
-    GameController controller;
+    GameController controller;    
 
     void Start()
     {
         controller = GameObject.Find("GameController").GetComponent<GameController>();
-        transform.rotation = Quaternion.Euler(90,0,0);        
+        transform.rotation = Quaternion.Euler(-90, 0, 0);        
     }
     void Update()
     {
@@ -25,10 +26,14 @@ public class BonusBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && isLife == true)
         {
-            controller.GainLife();
-            Destroy(this.gameObject);
+            controller.GainLife();            
         }
+        else if (other.gameObject.tag == "Player" && isLife == false)
+        {
+            controller.GainCoin();
+        }
+        Destroy(this.gameObject);
     }
 }

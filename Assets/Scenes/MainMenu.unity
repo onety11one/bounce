@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 305545894}
   - component: {fileID: 305545897}
   m_Layer: 5
-  m_Name: TotalScoreText
+  m_Name: CoinsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2446,6 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da379c669b7ca54e8a300a4fd8318d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsText: {fileID: 305545894}
   shopItem:
   - {fileID: 11400000, guid: a1ffd91e5ce36c44abbaa1b04e542cdb, type: 2}
   - {fileID: 11400000, guid: 5015edae680d82d4cbdc9a744105d0d1, type: 2}
@@ -3475,6 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da379c669b7ca54e8a300a4fd8318d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsText: {fileID: 305545894}
   shopItem:
   - {fileID: 11400000, guid: 722f199bba7fff1489cd55124cf2a1da, type: 2}
   - {fileID: 11400000, guid: ef61694394478f34daaceb6f999390e8, type: 2}
@@ -3594,7 +3596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topScoreText: {fileID: 61368104}
-  totalScoreText: {fileID: 305545894}
+  coinsText: {fileID: 305545894}
 --- !u!4 &2064554228
 Transform:
   m_ObjectHideFlags: 0
@@ -3662,6 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da379c669b7ca54e8a300a4fd8318d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsText: {fileID: 305545894}
   shopItem:
   - {fileID: 11400000, guid: 540ce7b50d7eb6b4eabb44804ad03f0a, type: 2}
   - {fileID: 11400000, guid: 13a34a9b4c7e0764898f4c1b0d81b6f2, type: 2}

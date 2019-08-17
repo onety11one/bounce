@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Red Ball
   sprite: {fileID: 21300000, guid: 72ed4aa37ef93614a9daf6d3cd3e63f8, type: 3}
-  price: 50
-  isBought: 1
+  price: 1
+  material: {fileID: 2100000, guid: a5f029dfeb20ab549a36fa2f022b28f3, type: 2}
+  isBought: 0
   isUsing: 0

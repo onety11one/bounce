@@ -15,3 +15,6 @@ MonoBehaviour:
   itemName: Scheme
   sprite: {fileID: 21300000, guid: c73819406612edc498473525c6f0f806, type: 3}
   price: 500
+  material: {fileID: 0}
+  isBought: 0
+  isUsing: 0

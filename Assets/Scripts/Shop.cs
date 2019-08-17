@@ -5,16 +5,22 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
+    public Text coinsText;
+    //PlayerInventory playerInventory;    
+    
     [Header("List of items sold")]
     [SerializeField] private ShopItem[] shopItem;
 
     [Header("References")]
     [SerializeField] private Transform shopContainer;
-    [SerializeField] private GameObject shopItemPrefab;  
+    [SerializeField] private GameObject shopItemPrefab;    
 
     void Start()
     {
+        //playerInventory.GetComponent<PlayerInventory>();        
+
         PopulateShop();
+        PlayerPrefs.GetInt("TotalScore");
     }
 
     void PopulateShop()
@@ -32,10 +38,15 @@ public class Shop : MonoBehaviour
     }
 
     void OnBuyButtonClick(ShopItem item)
-    {        
+    {
+        GameController.coins -= item.price;
+        item.isBought = true;
+        
+        if (item.price <= GameController.coins)
+        {
             Debug.Log("You bought " + item.name + " for " + item.price);
-            item.isBought = true;
-            GameController.totalScore -= item.price;
-            Debug.Log("Total Score: " + GameController.totalScore);         
+            coinsText.text = "$ " + GameController.coins;
+            PlayerPrefs.SetInt("Coins", GameController.coins);
+        }        
     }    
 }

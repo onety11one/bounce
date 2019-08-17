@@ -10,17 +10,17 @@ public class GameController : MonoBehaviour
     public Text scoreText;
     public Text livesText;
     public Text topScoreText;
-    public Text totalScoreText;
+    public Text coinsText;
     public Text gameOverScoreText;
     public float acceleration = 0.0025f;
     public int lives;
     public int topScore;
-    public static int totalScore;
+    public static int coins;
     int score;    
 
     void Start()
     {
-        totalScore = PlayerPrefs.GetInt("TotalScore");
+        coins = PlayerPrefs.GetInt("Coins");
         Time.timeScale = 1;        
         livesText.text = "Lives: " + lives.ToString();        
     }
@@ -36,6 +36,12 @@ public class GameController : MonoBehaviour
         livesText.text = "Lives: " + lives.ToString();
     }
 
+    public void GainCoin()
+    {
+        coins++;
+        coinsText.text = "$: " + coins.ToString();
+    }
+
     public void Scored()
     {
         score++;
@@ -45,14 +51,13 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);       
-        PlayerPrefs.SetInt("TotalScore", totalScore+score);
+        PlayerPrefs.SetInt("Coins", coins);
 
         if(PlayerPrefs.GetInt("HighScore") < score)
         {
             PlayerPrefs.SetInt("HighScore", score);
         }
-
-        totalScoreText.text = "$: " + PlayerPrefs.GetInt("TotalScore");
+        
         topScoreText.text = "Top Score: " + PlayerPrefs.GetInt("HighScore");
         gameOverScoreText.text = "Game Over! \n Score: " + score.ToString();        
     }

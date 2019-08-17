@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public Text topScoreText;
-    public Text totalScoreText;
+    public Text coinsText;
 
     void Start()
     {        
         topScoreText.text = "Top Score: " + PlayerPrefs.GetInt("HighScore");
-        totalScoreText.text = "$ " + PlayerPrefs.GetInt("TotalScore");
+        coinsText.text = "$ " + PlayerPrefs.GetInt("Coins");
     }
 
     public void StartGame()
@@ -24,6 +24,6 @@ public class MenuController : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         topScoreText.text = "Top Score: " + 0;
-        totalScoreText.text = "$ 0";
+        coinsText.text = "$ 0";
     }    
 }
