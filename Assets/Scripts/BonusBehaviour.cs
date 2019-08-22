@@ -28,12 +28,14 @@ public class BonusBehaviour : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && isLife == true)
         {
-            controller.GainLife();            
+            controller.GainLife();
+            Destroy(this.gameObject);
         }
         else if (other.gameObject.tag == "Player" && isLife == false)
         {
             controller.GainCoin();
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        
     }
 }

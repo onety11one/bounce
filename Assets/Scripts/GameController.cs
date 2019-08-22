@@ -5,24 +5,25 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
-{    
+{
     public GameObject gameOverPanel;
     public Text scoreText;
     public Text livesText;
-    public Text topScoreText;
     public Text coinsText;
+    public Text topScoreText;
     public Text gameOverScoreText;
     public float acceleration = 0.0025f;
-    public int lives;
-    public int topScore;
     public static int coins;
-    int score;    
+    public int lives;
+    int topScore;
+    int score;
+    int sessoinCoins;
 
     void Start()
     {
         coins = PlayerPrefs.GetInt("Coins");
-        Time.timeScale = 1;        
-        livesText.text = "Lives: " + lives.ToString();        
+        sessoinCoins = 0;
+        Time.timeScale = 1;       
     }
 
     void Update()
@@ -33,33 +34,33 @@ public class GameController : MonoBehaviour
     public void GainLife()
     {
         lives++;
-        livesText.text = "Lives: " + lives.ToString();
+        livesText.text = lives.ToString();
     }
 
     public void GainCoin()
     {
-        coins++;
-        coinsText.text = "$: " + coins.ToString();
+        sessoinCoins++;
+        coinsText.text = sessoinCoins.ToString();
     }
 
-    public void Scored()
+    public void GainScore()
     {
         score++;
-        scoreText.text = "Score: " + score.ToString();        
+        scoreText.text = score.ToString();
     }
 
     public void GameOver()
     {
-        gameOverPanel.SetActive(true);       
+        gameOverPanel.SetActive(true);
+        coins += sessoinCoins;
         PlayerPrefs.SetInt("Coins", coins);
 
-        if(PlayerPrefs.GetInt("HighScore") < score)
+        if (PlayerPrefs.GetInt("HighScore") < score)
         {
             PlayerPrefs.SetInt("HighScore", score);
         }
-        
         topScoreText.text = "Top Score: " + PlayerPrefs.GetInt("HighScore");
-        gameOverScoreText.text = "Game Over! \n Score: " + score.ToString();        
+        gameOverScoreText.text = "Game Over! \n Score: " + score.ToString() + "\n Coins: " + sessoinCoins.ToString();
     }
 
     public void Restart()
@@ -70,5 +71,5 @@ public class GameController : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene(0);
-    }    
+    }
 }

@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawningObjects.cs" />
+    <Compile Include="Assets\Scripts\PlayerTrail.cs" />
     <Compile Include="Assets\Scripts\RepeatingBackground.cs" />
     <Compile Include="Assets\Scripts\ScoreGainer.cs" />
     <Compile Include="Assets\Scripts\ScrollingObject.cs" />
