@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerSpawningObjects : MonoBehaviour
 {
     public GameObject playerPlatformPrefab;
-
     Vector2 screenToWorld;
 
     void Update()

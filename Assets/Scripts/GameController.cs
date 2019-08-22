@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public GameObject[] background;
     public GameObject gameOverPanel;
     public GameObject scoreIcon;
     public GameObject coinsIcon;
@@ -23,8 +24,10 @@ public class GameController : MonoBehaviour
     int sessoinCoins;
 
     void Start()
-    {
+    {        
+        SetBackground(Color.white);
         coins = PlayerPrefs.GetInt("Coins");
+        lives = 0;
         sessoinCoins = 0;
         Time.timeScale = 1;       
     }
@@ -52,6 +55,11 @@ public class GameController : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    public void LoseLife()
+    {
+        lives--;
+    }
+
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
@@ -77,5 +85,13 @@ public class GameController : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void SetBackground(Color color)
+    {
+        foreach (var bg in background)
+        {
+            bg.GetComponent<Renderer>().sharedMaterial.color = color;
+        }
     }
 }

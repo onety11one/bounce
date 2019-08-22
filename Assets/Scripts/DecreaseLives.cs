@@ -8,15 +8,15 @@ public class DecreaseLives : MonoBehaviour
 
     void Start()
     {
-        controller = GameObject.Find("GameController").GetComponent<GameController>();
+        controller = GameObject.Find("GameController").GetComponent<GameController>();        
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
-        {            
-            controller.lives--;
-            controller.livesText.text = "Lives: " + controller.lives.ToString();
+        {
+            controller.LoseLife();
+            controller.livesText.text = controller.lives.ToString();
             this.gameObject.SetActive(false);            
         }
     }

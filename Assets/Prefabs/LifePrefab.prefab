@@ -98,6 +98,7 @@ MonoBehaviour:
   rotSpeed: 50
   vertSpeed: 50
   isLife: 1
+  effect: {fileID: 7790466380114803606, guid: 0b8857fe821d6a94d847c61e7e214595, type: 3}
 --- !u!114 &4259314317288446840
 MonoBehaviour:
   m_ObjectHideFlags: 0

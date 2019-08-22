@@ -11,7 +11,6 @@ ScriptsOnlyBuild:
     - PlatformSpawner
     - PlayerInventory
     - PlayerMovement
-    - PlayerRotation
     - PlayerSpawningObjects
     - PlayerTrail
     - RepeatingBackground
@@ -81,55 +80,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9668}
+      Script: {instanceID: 9676}
     - Class: 114
-      Script: {instanceID: 9684}
+      Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 9698}
+      Script: {instanceID: 9706}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9874}
     - Class: 114
-      Script: {instanceID: 9916}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 10204}
+      Script: {instanceID: 10212}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10338}
     - Class: 114
-      Script: {instanceID: 10354}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10376}
+      Script: {instanceID: 10384}
     - Class: 114
-      Script: {instanceID: 10474}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10822}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 10838}
+      Script: {instanceID: 10850}
     - Class: 114
-      Script: {instanceID: 10868}
+      Script: {instanceID: 10880}
     - Class: 114
-      Script: {instanceID: 11020}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 11550}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11734}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11722}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 11758}
-    - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -182,53 +179,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9668}
+      Script: {instanceID: 9676}
     - Class: 114
-      Script: {instanceID: 9714}
+      Script: {instanceID: 9722}
     - Class: 114
-      Script: {instanceID: 9806}
+      Script: {instanceID: 9814}
     - Class: 114
-      Script: {instanceID: 9808}
+      Script: {instanceID: 9816}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9874}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 9906}
+      Script: {instanceID: 9914}
     - Class: 114
-      Script: {instanceID: 9916}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 9978}
+      Script: {instanceID: 9986}
     - Class: 114
-      Script: {instanceID: 10038}
+      Script: {instanceID: 10046}
     - Class: 114
-      Script: {instanceID: 10116}
+      Script: {instanceID: 10124}
     - Class: 114
-      Script: {instanceID: 10268}
+      Script: {instanceID: 10276}
     - Class: 114
-      Script: {instanceID: 10376}
+      Script: {instanceID: 10384}
     - Class: 114
-      Script: {instanceID: 10594}
+      Script: {instanceID: 10602}
     - Class: 114
-      Script: {instanceID: 10610}
+      Script: {instanceID: 10618}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10756}
+      Script: {instanceID: 10766}
     - Class: 114
-      Script: {instanceID: 10822}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 11174}
+      Script: {instanceID: 11188}
     - Class: 114
-      Script: {instanceID: 11186}
+      Script: {instanceID: 11200}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11688}
+      Script: {instanceID: 11702}
     - Class: 114
-      Script: {instanceID: 11722}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,6 +245,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: e4db0ddf42150a3b60bd39cf2bc3def2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightFlicker
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -574,6 +577,12 @@ ScriptsOnlyBuild:
     className: NetworkCallbacks
   - hash:
       serializedVersion: 2
+      Hash: 5d27c6e85ec89cfab8577e9e26695e88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
       Hash: 21e871d89bbce53c038fc75ad1b7c7f3
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -592,6 +601,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 660deb0ce569359218f0ba85b7ce0e3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightIntensityFade
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -604,7 +619,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: cbb170954530d4b0f72eac637a8d8e12
+      Hash: e00f7b8fc68528ce0bbeda78d89f13de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -634,10 +649,10 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: dad3a1f1e1ecb4691721bab721edd60a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerRotation
+    className: CFX_AutoRotate
   - hash:
       serializedVersion: 2
       Hash: 12e64d607873da15ad3f833620350d51
@@ -700,7 +715,7 @@ ScriptsOnlyBuild:
     className: ShopItemButtons
   - hash:
       serializedVersion: 2
-      Hash: b8a025422a11c1de812bac762766499a
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScrollingObject
@@ -760,7 +775,7 @@ ScriptsOnlyBuild:
     className: BonusBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 193334c50f7d298844bfe13f64afeb39
+      Hash: b1ba6ab985b1443255dd405c651ff159
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -778,7 +793,7 @@ ScriptsOnlyBuild:
     className: NetworkAnimator
   - hash:
       serializedVersion: 2
-      Hash: 21355d87bdc127f907bab22e7316c4ed
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformColorRandomizer
@@ -900,4 +915,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/Pasha/Desktop/Runner_v00011.apk
+  playerPath: C:/Users/Pasha/Desktop/Runner_v00012.apk

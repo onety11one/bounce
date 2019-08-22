@@ -8,10 +8,12 @@ public class BonusBehaviour : MonoBehaviour
     public float vertSpeed = 2f;
     public bool isLife;
     Vector3 newPosition;
-    GameController controller;    
+    GameController controller;
+    PlayerMovement pMove;
 
     void Start()
     {
+        pMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         controller = GameObject.Find("GameController").GetComponent<GameController>();
         transform.rotation = Quaternion.Euler(-90, 0, 0);        
     }
@@ -25,9 +27,10 @@ public class BonusBehaviour : MonoBehaviour
     }   
 
     public void OnTriggerEnter(Collider other)
-    {
+    {        
         if (other.gameObject.tag == "Player" && isLife == true)
         {
+            pMove.PlayEffect();
             controller.GainLife();
             Destroy(this.gameObject);
         }
