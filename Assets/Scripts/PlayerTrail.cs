@@ -38,7 +38,7 @@ public class PlayerTrail : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         //cull based on lifetime

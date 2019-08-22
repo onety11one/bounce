@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject gameOverPanel;
+    public GameObject scoreIcon;
+    public GameObject coinsIcon;
+    public GameObject livesIcon;
     public Text scoreText;
     public Text livesText;
     public Text coinsText;
@@ -52,6 +55,9 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+        scoreIcon.SetActive(false);
+        coinsIcon.SetActive(false);
+        livesIcon.SetActive(false);
         coins += sessoinCoins;
         PlayerPrefs.SetInt("Coins", coins);
 
